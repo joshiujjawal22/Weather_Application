@@ -1,0 +1,76 @@
+*{
+	margin:0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	font-family: ;
+	background: url('../res/weather.jpg');
+	background-size: cover;
+	background-repeat: no-repeat ;
+	background-color: #48dbfb;
+}
+.title{
+	margin-top:10vh;
+	text-align: center;
+	font-size: 40px;
+}
+
+@media (max-width: 700px){
+	.title{
+	
+	font-size: 25px;
+}
+}
+.input{
+	text-align: center;
+	margin-top: 10vh;
+	line-height: 80px;
+
+}
+
+input[type="text"]{
+	height: 50px;
+	width: 600px;
+	background: #e7e7e7;
+	font-family: ;
+	font-weight: bold;
+	font-size: 20px;
+	border: none;
+	border-radius: 10px;
+	padding: 10px 50px;
+}
+
+input[type="submit"]{
+	height: 50px;
+	width: 200px;
+	background: #e7e7e7;
+	font-family: ;
+	font-weight: bold;
+	font-size: 20px;
+	border: none;
+	border-radius: 10px;
+
+}
+.display{ text-align: center; }
+
+@media (max-width:600px) {
+input[type="text"]{
+width: 300px;}
+input[type="submit"]{
+	width: 120px;
+	font-size: 15px;
+
+
+}
+}
+.name{
+font-size: 50px;
+}
+.desc{
+font-size: 25px;
+}
+.temp{
+font-size: 25px;}
+.wind_speed{
+font-size: 25px;}
