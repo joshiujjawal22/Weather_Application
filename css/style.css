@@ -4,27 +4,26 @@
 	box-sizing: border-box;
 }
 body{
-	font-family: ;
+	
 	background: url('../res/weather.jpg');
 	background-size: cover;
 	background-repeat: no-repeat ;
 	background-color: #48dbfb;
+	text-align: center;
 }
 .title{
-	margin-top:10vh;
+	margin-top:5vh;
 	text-align: center;
 	font-size: 40px;
 }
 
 @media (max-width: 700px){
 	.title{
-	
 	font-size: 25px;
 }
 }
 .input{
-	text-align: center;
-	margin-top: 10vh;
+	margin-top: 8vh;
 	line-height: 80px;
 
 }
@@ -33,7 +32,6 @@ input[type="text"]{
 	height: 50px;
 	width: 600px;
 	background: #e7e7e7;
-	font-family: ;
 	font-weight: bold;
 	font-size: 20px;
 	border: none;
@@ -45,14 +43,12 @@ input[type="submit"]{
 	height: 50px;
 	width: 200px;
 	background: #e7e7e7;
-	font-family: ;
 	font-weight: bold;
 	font-size: 20px;
 	border: none;
 	border-radius: 10px;
 
 }
-.display{ text-align: center; }
 
 @media (max-width:600px) {
 input[type="text"]{
@@ -74,3 +70,38 @@ font-size: 25px;
 font-size: 25px;}
 .wind_speed{
 font-size: 25px;}
+
+
+
+/*--------Spinner-------*/
+
+#spinner{
+	visibility: hidden;
+	width: 80px;
+	height: 80px;
+  
+	border: 2px solid #f3f3f3;
+	border-top:3px solid #f25a41;
+	border-radius: 100%;
+  
+	position: absolute;
+	top:0;
+	bottom:0;
+	left:0;
+	right: 0;
+	margin: auto;
+  
+	animation: spin 1s infinite linear;
+  }
+  
+  @keyframes spin {
+	from {
+		transform: rotate(0deg);
+	} to {
+		transform: rotate(360deg);
+	}
+  }
+  
+  #spinner.show {
+	visibility: visible;
+  }
