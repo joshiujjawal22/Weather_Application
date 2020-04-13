@@ -12,12 +12,10 @@ button.addEventListener('click', function (e) {
 
 
 function loadData() {
-    spinner.removeAttribute('hidden');
+   
     fetch('https://api.openweathermap.org/data/2.5/weather?q='+city.value+'&appid=50a7aa80fa492fa92e874d23ad061374')
         .then(response => response.json())
         .then(data => {
-            console.log(data)
-            spinner.setAttribute('hidden', '');
             nam.innerHTML = "City Name : " + data['name'];
             desc.innerHTML = "Temperature : " + data['main']['temp'] + "Kelvin";
             temp.innerHTML = "Description : " + data['weather']['0']['description'];
