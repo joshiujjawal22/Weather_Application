@@ -10,7 +10,7 @@ button.addEventListener('click', function (e) {
 
 function loadData() {
    
-    fetch('https://api.openweathermap.org/data/2.5/weather?q='+city.value+'&appid=50a7aa80fa492fa92e874d23ad061374')
+    fetch('https://api.openweathermap.org/data/2.5/weather?q='+city.value+'&appid=1fc232b651c2734118f63de0d555156b')
         .then(response => response.json())
         .then(data => {
 
